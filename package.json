@@ -1,0 +1,26 @@
+{
+  "name": "lib-address",
+  "version": "0.3.0",
+  "description": "A simple library to generate Ethereum addresses",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "webpack": "webpack",
+    "dev": "webpack-dev-server",
+    "prettier": "prettier --ignore-path ./.prettierignore --write  \"{.,lib}/*.js\""
+  },
+  "author": "eth-button",
+  "license": "ISC",
+  "devDependencies": {
+    "prettier": "1.10.2",
+    "uglifyjs-webpack-plugin": "1.1.8",
+    "webpack": "3.10.0",
+    "webpack-dev-server": "2.11.1"
+  },
+  "dependencies": {
+    "crypto-js": "3.1.9-1",
+    "ethereumjs-util": "5.1.3",
+    "safe-buffer": "5.1.1",
+    "uuid": "3.2.1"
+  }
+}
