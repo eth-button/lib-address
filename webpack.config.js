@@ -8,7 +8,7 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.js$/,
+        test: /(\.|lib)\/\.js$/,
         exclude: /node_modules/,
         loader: "eslint-loader",
         options: {}
