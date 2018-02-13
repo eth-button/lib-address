@@ -4,7 +4,6 @@ import {
   isValidPrivate,
   privateToPublic,
   publicToAddress,
-  sha3,
   toChecksumAddress,
   toBuffer
 } from "ethereumjs-util";
@@ -38,7 +37,6 @@ export default class Address {
 
   generateWallet(password) {
     const privateKey = this._privateKey;
-    const address = this.address;
     const crypto = encryptPrivateKey(privateKey, password);
     return {
       crypto,
